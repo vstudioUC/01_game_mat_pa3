@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PA3-UC</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="/frontend/img/favicon.ico" type="image/x-icon">
+ <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
   <div class="quiz-container">
-    <h1>&#x1F60E; Cuestionario de Matemáticas Básicas -PA3</h1>
+  <audio id="correct-audio" src="audio/keygen.mp3" preload="auto" loop></audio>
+    <h1>&#x1F60E; Cuestionario de Matemática Básica -PA3</h1>
 <!-- Añádelo justo debajo de tu título h1 -->
 <div class="progress-container">
   <div id="progress-bar"></div>
@@ -27,5 +40,11 @@
   </div>
 
   <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<div class="author-box">
+  <p><strong>Docente: </strong>Matilde Peña Casa</p>
+  <p><strong>Alumno: </strong>Fredy Sánchez Quispe</p>
+  <p><strong>Programa académico: </strong>Ing. Industrial</p>
+</div>
 </body>
 </html>
